@@ -51,7 +51,7 @@
 }
 
 .image-grid {
-  object-fit:cover;
+  object-fit:contain;
   width: 90%;
   height: 90%;
   border-radius: 0.5em;
@@ -106,4 +106,42 @@
 
 .mail-image{
   width: 10%;
+}
+
+
+@media only screen and (max-width : 480px) {
+  .grid-element {
+    grid-template-columns: 1fr;
+  }
+  .grid-table {
+    grid-template-columns: 1fr;
+  }
+
+  .image-desc{
+    font-size: 3vw;
+  }
+  .image-title{
+    font-size: 5vw;
+  }
+
+  
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .grid-element {
+    grid-template-columns: 1fr;
+  }
+  .grid-table {
+    grid-template-columns: 1fr;
+  }
+
+  .image-desc{
+    font-size: 3vw;
+  }
+  .image-title{
+    font-size: 5vw;
+  }
+
+  
 }
